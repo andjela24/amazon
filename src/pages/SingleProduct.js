@@ -19,7 +19,7 @@ const SingleProduct = () => {
     img: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg",
   };
 
-  const [orderedProduct, setorderedProduct] = useState(true);
+  const [orderedProduct] = useState(true);
   const copyToClipboard = (text) => {
     console.log("text", text);
     var textField = document.createElement("textarea");
@@ -92,9 +92,9 @@ const SingleProduct = () => {
                   />
                   <p className="mb-0 t-review">( 2 Reviews )</p>
                 </div>
-                <a className="review-btn" href="#review">
+                <button className="btn btn-link text-dark text-decoration-underline">
                   Write a Review
-                </a>
+                </button>
               </div>
               <div className=" py-3">
                 <div className="d-flex gap-10 align-items-center my-2">
@@ -165,14 +165,14 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="">
+                    <button className="btn btn-link text-dark text-decoration-underline">
                       <TbGitCompare className="fs-5 me-2" /> Add to Compare
-                    </a>
+                    </button>
                   </div>
                   <div>
-                    <a href="">
+                    <button className="btn btn-link text-dark text-decoration-underline">
                       <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <div className="d-flex gap-10 flex-column  my-3">
@@ -185,8 +185,8 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex gap-10 align-items-center my-3">
                   <h3 className="product-heading">Product Link:</h3>
-                  <a
-                    href="javascript:void(0);"
+                  <button
+                    className="btn btn-link text-dark text-decoration-underline"
                     onClick={() => {
                       copyToClipboard(
                         "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?cs=srgb&dl=pexels-fernando-arcos-190819.jpg&fm=jpg"
@@ -194,7 +194,7 @@ const SingleProduct = () => {
                     }}
                   >
                     Copy Product Link
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -237,9 +237,9 @@ const SingleProduct = () => {
                 </div>
                 {orderedProduct && (
                   <div>
-                    <a className="text-dark text-decoration-underline" href="">
+                    <button className="btn btn-link text-dark text-decoration-underline">
                       Write a Review
-                    </a>
+                    </button>
                   </div>
                 )}
               </div>

@@ -14,6 +14,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12">
             <iframe
+              title="map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38090.20404795508!2d20.442053306373452!3d44.79973444912547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70743dc3f11b%3A0x2f9955380ae0574!2sVra%C4%8Dar%2C%20Belgrade!5e0!3m2!1sen!2srs!4v1677003200222!5m2!1sen!2srs"
               width="600"
               height="450"
